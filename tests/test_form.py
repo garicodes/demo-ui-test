@@ -10,5 +10,8 @@ def test_form():
     page = FormPage(driver)
     page.go_to()
 
+    # Add name to First Name input
+    page.input_first_name().send_keys("Jason")
+
     # Closes the browser
     close_browser(driver)
