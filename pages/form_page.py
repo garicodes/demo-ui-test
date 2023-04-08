@@ -10,4 +10,4 @@ class FormPage:
         self.driver.get(self.url)
 
     def input_first_name(self):
-        return self.driver.find_element(By.XPATH, "//*[@id='firstName']")
+        return self.driver.find_element(By.CSS_SELECTOR, "input[id='firstName']")
