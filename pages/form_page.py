@@ -11,3 +11,6 @@ class FormPage:
 
     def input_first_name(self):
         return self.driver.find_element(By.CSS_SELECTOR, "input[id='firstName']")
+
+    def input_last_name(self):
+        return self.driver.find_element(By.CSS_SELECTOR, "input[id='lastName']")
