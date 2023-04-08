@@ -13,5 +13,8 @@ def test_form():
     # Add name to First Name input
     page.input_first_name().send_keys("Jason")
 
+    # Add name to Last Name input
+    page.input_last_name().send_keys("Voorhees")
+
     # Closes the browser
     close_browser(driver)
