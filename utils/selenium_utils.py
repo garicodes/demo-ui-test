@@ -8,9 +8,6 @@ def open_browser():
     return driver
 
 
-
-
-
 def close_browser(driver):
     # Setting driver to close
     driver.quit()
