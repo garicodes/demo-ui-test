@@ -48,7 +48,7 @@ class FormPage:
     def label_custom(self):
         return self.driver.find_element(By.CSS_SELECTOR, "label[for='hobbies-checkbox-1']")
 
-    def textarea_current_address(self):
+    def current_address(self):
         return self.driver.find_element(By.CSS_SELECTOR, "textarea[id='currentAddress']")
 
     def input_react_select(self):
