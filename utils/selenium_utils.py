@@ -9,7 +9,7 @@ def open_browser():
 
 
 def screenshot(driver):
-    driver.save_screenshot('C:/Users/Gariel/PycharmProjects/demo-ui-test/screenshots/test_form1.png')
+    driver.save_screenshot('C:/Users/Gariel/PycharmProjects/demo-ui-test/screenshots/test_form.png')
 
 
 def close_browser(driver):
