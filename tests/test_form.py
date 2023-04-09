@@ -1,3 +1,5 @@
+import time
+
 from pages.form_page import FormPage
 from utils.selenium_utils import open_browser, close_browser
 
@@ -44,7 +46,9 @@ def test_form():
     page.option_june().click()
     page.select_year().click()
     page.option_specific_year().click()
+    page.choose_day().click()
 
+    time.sleep(10)
     page.take_screenshot()
 
     # Closes the browser
