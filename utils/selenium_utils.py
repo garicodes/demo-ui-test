@@ -8,8 +8,7 @@ def open_browser():
     return driver
 
 
-def screenshot(driver):
-    driver.save_screenshot('C:/Users/Gariel/PycharmProjects/demo-ui-test/screenshots/test_form.png')
+
 
 
 def close_browser(driver):

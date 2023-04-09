@@ -9,6 +9,9 @@ class FormPage:
     def go_to(self):
         self.driver.get(self.url)
 
+    def take_screenshot(self):
+        self.driver.save_screenshot('C:/Users/Gariel/PycharmProjects/demo-ui-test/screenshots/test_form.png')
+
     def input_first_name(self):
         return self.driver.find_element(By.CSS_SELECTOR, "input[id='firstName']")
 
