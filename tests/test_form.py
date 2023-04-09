@@ -25,9 +25,11 @@ def test_form():
     page.label_other().click()
 
     # Choosing date of birth
+    page.input_date_birth().click()
     page.select_month().click()
     page.option_june().click()
-    page.select_year()
+    page.select_year().click()
+    page.option_specific_year().click()
 
     # Closes the browser
     close_browser(driver)

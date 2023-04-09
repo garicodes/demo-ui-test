@@ -39,10 +39,10 @@ class FormPage:
     def select_year(self):
         return self.driver.find_element(By.CSS_SELECTOR, "select[class$='year-select']")
 
-    def option(self):
+    def option_specific_year(self):
         return self.driver.find_element(By.CSS_SELECTOR, "option[value='1946']")
 
-    def div_choose_thursday_june(self):
+    def choose_day(self):
         return self.driver.find_element(By.CSS_SELECTOR, "div[class='react-datepicker__day react-datepicker__day--013']")
 
     def label_custom(self):
