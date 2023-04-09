@@ -3,12 +3,15 @@ from utils.selenium_utils import open_browser, close_browser
 
 # Defining the driver variable as a global variable
 driver = None
+page = None
 
 
 def setup():
     # Open the browser before running tests
     global driver
     driver = open_browser()
+    global page
+    page = FormPage(driver)
 
 
 def teardown():
@@ -19,7 +22,6 @@ def teardown():
 
 def test_form():
     # Navigates to form page
-    page = FormPage(driver)
     page.go_to()
 
     # Add name to First Name input
