@@ -1,11 +1,23 @@
 from pages.form_page import FormPage
 from utils.selenium_utils import open_browser, close_browser
 
+# Defining the driver variable as a global variable
+driver = None
 
-def test_form():
-    # Opens the browser
+
+def setup():
+    # Open the browser before running tests
+    global driver
     driver = open_browser()
 
+
+def teardown():
+    # Close the browser after running tests
+    global driver
+    close_browser(driver)
+
+
+def test_form():
     # Navigates to form page
     page = FormPage(driver)
     page.go_to()
