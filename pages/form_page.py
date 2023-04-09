@@ -36,7 +36,7 @@ class FormPage:
     def option_june(self):
         return self.driver.find_element(By.CSS_SELECTOR, "option[value='5']")
 
-    def select_react_year(self):
+    def select_year(self):
         return self.driver.find_element(By.CSS_SELECTOR, "select[class$='year-select']")
 
     def option(self):
