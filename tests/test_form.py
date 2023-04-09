@@ -16,5 +16,13 @@ def test_form():
     # Add name to Last Name input
     page.input_last_name().send_keys("Voorhees")
 
+    # Add email to Email Address input
+    page.input_user_email().send_keys("jvoorhees@slasher.pro")
+
+    # Choose gender
+    page.label_male().click()
+    page.label_female().click()
+    page.label_other().click()
+
     # Closes the browser
     close_browser(driver)
