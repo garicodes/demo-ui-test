@@ -1,5 +1,5 @@
 from pages.form_page import FormPage
-from utils.selenium_utils import open_browser, close_browser
+from utils.selenium_utils import open_browser, close_browser, screenshot
 
 # Defining the driver variable as a global variable
 driver = None
@@ -44,6 +44,8 @@ def test_form():
     page.option_june().click()
     page.select_year().click()
     page.option_specific_year().click()
+
+    screenshot(driver)
 
     # Closes the browser
     close_browser(driver)
