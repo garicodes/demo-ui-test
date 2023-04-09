@@ -30,7 +30,7 @@ class FormPage:
     def input_date_birth(self):
         return self.driver.find_element(By.CSS_SELECTOR, "input[id='dateOfBirthInput']")
 
-    def select_january_february_march_april(self):
+    def select_month(self):
         return self.driver.find_element(By.CSS_SELECTOR, "select[class$='month-select']")
 
     def option_june(self):
