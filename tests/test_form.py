@@ -36,9 +36,9 @@ def test_form():
     page.input_user_email().send_keys("jvoorhees@slasher.pro")
 
     # Choose gender
-    page.label_male().click()
-    page.label_female().click()
-    page.label_other().click()
+    page.gender_male().click()
+    page.gender_female().click()
+    page.gender_other().click()
 
     # Choosing date of birth
     page.input_date_birth().click()

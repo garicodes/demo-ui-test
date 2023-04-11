@@ -10,7 +10,7 @@ class FormPage:
         self.driver.get(self.url)
 
     def take_screenshot(self):
-        self.driver.save_screenshot('C:/Users/Gariel/PycharmProjects/demo-ui-test/screenshots/test_form.png')
+        self.driver.save_screenshot('../screenshots/test_form.png')
 
     def input_first_name(self):
         return self.driver.find_element(By.CSS_SELECTOR, "input[id='firstName']")
@@ -21,13 +21,13 @@ class FormPage:
     def input_user_email(self):
         return self.driver.find_element(By.CSS_SELECTOR, "input[id='userEmail']")
 
-    def label_male(self):
+    def gender_male(self):
         return self.driver.find_element(By.CSS_SELECTOR, "label[for='gender-radio-1']")
 
-    def label_female(self):
+    def gender_female(self):
         return self.driver.find_element(By.CSS_SELECTOR, "label[for='gender-radio-2']")
 
-    def label_other(self):
+    def gender_other(self):
         return self.driver.find_element(By.CSS_SELECTOR, "label[for='gender-radio-3']")
 
     def input_date_birth(self):
@@ -48,7 +48,7 @@ class FormPage:
     def choose_day(self):
         return self.driver.find_element(By.CSS_SELECTOR, "div[class='react-datepicker__day react-datepicker__day--013']")
 
-    def label_custom(self):
+    def hobbies_sports(self):
         return self.driver.find_element(By.CSS_SELECTOR, "label[for='hobbies-checkbox-1']")
 
     def current_address(self):
