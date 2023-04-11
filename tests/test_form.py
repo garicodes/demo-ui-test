@@ -49,7 +49,7 @@ def test_form():
     page.choose_day().click()
 
     # Choosing hobby
-    page.hobbies_sports().click()
+    page.input_hobbies_checkbox().click()
 
     # Enters current address
     page.current_address().send_keys("11 Sand Pond Road")

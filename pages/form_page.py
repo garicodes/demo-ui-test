@@ -46,10 +46,11 @@ class FormPage:
         return self.driver.find_element(By.CSS_SELECTOR, "option[value='1946']")
 
     def choose_day(self):
-        return self.driver.find_element(By.CSS_SELECTOR, "div[class='react-datepicker__day react-datepicker__day--013']")
+        return self.driver.find_element(By.CSS_SELECTOR,
+                                        "div[class='react-datepicker__day react-datepicker__day--013']")
 
-    def hobbies_sports(self):
-        return self.driver.find_element(By.CSS_SELECTOR, "label[for='hobbies-checkbox-1']")
+    def input_hobbies_checkbox(self):
+        return self.driver.find_element(By.CSS_SELECTOR, "label[for='hobbies-checkbox-2']")
 
     def current_address(self):
         return self.driver.find_element(By.CSS_SELECTOR, "textarea[id='currentAddress']")
@@ -59,3 +60,4 @@ class FormPage:
 
     def div_state(self):
         return self.driver.find_element(By.CSS_SELECTOR, "div[id='state']")
+
