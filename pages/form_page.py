@@ -58,6 +58,8 @@ class FormPage:
     def input_react_select(self):
         return self.driver.find_element(By.CSS_SELECTOR, "input[id='react-select-3-input']")
 
-    def div_state(self):
+    def state_dropdown(self):
         return self.driver.find_element(By.CSS_SELECTOR, "div[id='state']")
 
+    def button_submit(self):
+        return self.driver.find_element(By.CSS_SELECTOR, "button[id='submit']")

@@ -1,5 +1,4 @@
 import time
-
 from pages.form_page import FormPage
 from utils.selenium_utils import open_browser, close_browser
 
@@ -49,10 +48,14 @@ def test_form():
     page.choose_day().click()
 
     # Choosing hobby
-    page.input_hobbies_checkbox().click()
+    # page.input_hobbies_checkbox().click()
 
     # Enters current address
     page.current_address().send_keys("11 Sand Pond Road")
+
+    # page.state_dropdown().click()
+
+    page.button_submit().click()
 
     time.sleep(10)
     page.take_screenshot()
