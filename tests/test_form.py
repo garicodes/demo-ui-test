@@ -48,6 +48,12 @@ def test_form():
     page.option_specific_year().click()
     page.choose_day().click()
 
+    # Choosing hobby
+    page.hobbies_sports().click()
+
+    # Enters current address
+    page.current_address().send_keys("11 Sand Pond Road")
+
     time.sleep(10)
     page.take_screenshot()
 
