@@ -55,9 +55,6 @@ class FormPage:
     def current_address(self):
         return self.driver.find_element(By.CSS_SELECTOR, "textarea[id='currentAddress']")
 
-    def input_react_select(self):
-        return self.driver.find_element(By.CSS_SELECTOR, "input[id='react-select-3-input']")
-
     def state_dropdown(self):
         return self.driver.find_element(By.CSS_SELECTOR, "div[id='state']")
 
