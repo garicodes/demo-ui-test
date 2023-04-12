@@ -46,8 +46,7 @@ class FormPage:
         return self.driver.find_element(By.CSS_SELECTOR, "option[value='1946']")
 
     def choose_day(self):
-        return self.driver.find_element(By.CSS_SELECTOR,
-                                        "div[class='react-datepicker__day react-datepicker__day--013']")
+        return self.driver.find_element(By.CSS_SELECTOR, "div[class='react-datepicker__day react-datepicker__day--013']")
 
     def input_hobbies_checkbox(self):
         return self.driver.find_element(By.CSS_SELECTOR, "label[for='hobbies-checkbox-2']")
